@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>gitoqe survey form</title>
 </head>
+
 <body>
-  
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <div id="main">
+    <h1 id="title">
+      @gitoqe survey form
+    </h1>
+    <p id="description">
+      short explanation
+    </p>
+
+    <form action="" id="survey-form">
+      <div class="form-item">
+        <label id="name-label" for="username">UserName</label>
+        <input type="text"
+        name="username"
+        id="name"
+        required
+        placeholder="enter your username"
+        >
+      </div>
+
+      <div class="form-item">
+        <label id="email-label" for="usermail">UserMail</label>
+        <input type="email"
+        name="usermail"
+        id="email"
+        required
+        placeholder="enter your email">
+      </div>
+
+      <div class="form-item">
+        <label id="number-label" for="usernumber">UserNumber</label>
+        <input type="number"
+        name="usernumber"
+        id="number"
+        min="18"
+        max="70"
+        placeholder="enter your maximum level this league">
+      </div>
+
+      <div class="form-item">
+        Choose your favourite event league from 2019-2020:
+        <select name="league" id="dropdown" required>
+          <option value="Heist"> Heist league</option>
+          <option value="Harvest"> Harvest league</option>
+          <option value="Delirium"> Delirium league</option>
+          <option value="Metamorph"> Metamorph league</option>
+          <option value="Blight"> Blight league</option>
+          <option value="Legion"> Legion league</option>
+          <option value="Synthesis"> Synthesis league</option>
+        </select>
+      </div>
+
+      <div id="form-item">
+        Choose your favourite overall playstyle league type:
+        <label> <input type="radio" name="playstyle" class="input-playstyle" value="std" checked> Standard </label> 
+        <label> <input type="radio" name="playstyle" class="input-playstyle" value="hc"> Hardcore </label> 
+        <label> <input type="radio" name="playstyle" class="input-playstyle" value="ssf"> Solo Self-Found </label> 
+        <label> <input type="radio" name="playstyle" class="input-playstyle" value="hcssf"> Hardcore Solo Self-Found </label> 
+      </div>
+
+      <div id="form-item">
+        Check your favourite character class:
+        <label><input type="checkbox" name="character" class="input-character" value="Marauder">Marauder</label>
+        <label><input type="checkbox" name="character" class="input-character" value="Duelist">Duelist</label>
+        <label><input type="checkbox" name="character" class="input-character" value="Ranger">Ranger</label>
+        <label><input type="checkbox" name="character" class="input-character" value="Shadow">Shadow</label>
+        <label><input type="checkbox" name="character" class="input-character" value="Witch">Witch</label>
+        <label><input type="checkbox" name="character" class="input-character" value="Templar">Templar</label>
+        <label><input type="checkbox" name="character" class="input-character" value="Scion">Scion</label>
+      </div>
+
+      <div id="form-item">
+        Write a few words about tour favourite build:
+        <textarea name="build" id="build" cols="30" rows="10" placeholder="Enter your thoughts here"></textarea>
+      </div>
+
+      <div id="form-item">
+        <button type="submit" id="submit">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
