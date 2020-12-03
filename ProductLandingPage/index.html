@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Product Landing Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
   <!-- User Story #1: My product landing page should have a header element with a corresponding id="header". -->
+  <!-- User Story #13: The navbar should always be at the top of the viewport. -->
   <header id="header">
     <!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here. -->
     <img src="" alt="Company Logo" id="header-img">
@@ -20,25 +24,39 @@
     </nav>
   </header>
 
-  User Story #6: I can watch an embedded product video with id="video".
-  
-  User Story #7: My landing page has a form element with a corresponding id="form".
-  
-  User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
-  
-  User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
-  
-  User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
-  
-  User Story #11: Within the form, there is a submit input with a corresponding id="submit".
-  
-  User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
-  
-  User Story #13: The navbar should always be at the top of the viewport.
-  
-  User Story #14: My product landing page should have at least one media query.
-  
-  User Story #15: My product landing page should utilize CSS flexbox at least once.
+  <section id="video-section">
+    <!-- User Story #6: I can watch an embedded product video with id="video". -->
+    <iframe id="video" height="315"
+      src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"
+      allowfullscreen></iframe>
+  </section>
+
+  <section id="feedback-form">
+    <!-- User Story #7: My landing page has a form element with a corresponding id="form". -->
+    <!-- User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL:
+  https://www.freecodecamp.com/email-submit). -->
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+      <div class="form-item">
+        <label class="name-label" for="feedback-text" class="hint">Feel free to leave some thoughts about this page:</label>
+        <textarea name="feedback-text" id="feedback-text" cols="30" rows="10" id="feedback-text"
+          placeholder="Enter your thoughts about this page"></textarea>
+      </div>
+      <div class="form-item">
+        <label class="name-label" for="feedback-text" class="hint">Your email:</label>
+        <!-- User Story #8: Within the form, there is an input field with id="email" where I can enter an email address. -->
+        <!-- User Story #9: The #email input field should have placeholder text to let the user know what the field is for. -->
+        <!-- User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address. -->
+        <input type="email" name="feedback-email" id="feedback-email" placeholder="example@example.com" required>
+      </div>
+      <div class="form-item">
+        <!-- User Story #11: Within the form, there is a submit input with a corresponding id="submit". -->
+        <button type="submit" id="submit">Send</button>
+      </div>
+    </form>
+  </section>
+  <!-- User Story #14: My product landing page should have at least one media query. -->
+  <!-- User Story #15: My product landing page should utilize CSS flexbox at least once. -->
 
 </body>
+
 </html>
