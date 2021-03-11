@@ -1,22 +1,73 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+/* normal size zone ______________________________*/
 body {
-    background-color: #060500;
-    font-family: Nerko One, Geneva, Tahoma, sans-serif;
-    color: #eee;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.4;
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
+  font-family: Nerko One, Geneva, Tahoma, sans-serif;
+  color: #eee;
+  background-color: #060500;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
 }
+#header {
+  /* position: fixed; */
+  top:0;
+  background-color: #2c270f;
+  min-height: 75px;
+  max-height: 150px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#header-img {
+  width: 20vw;
+  max-width: 200px;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 0px;
+}
+.logo {
+  height: 80%;
+  flex-shrink: 1;
+}
+
+nav > ul {
+  display: flex;
+  /* margin-left: 0; */
+  flex-shrink: 5;
+}
+nav > ul > li {
+  list-style: none;
+  /* padding: 0 20% 0 0; */
+}
+
+
 a {
-    color: #f5c234b9
+  color: #f5c234b9
 }
+/* 650 px width zone ______________________________*/
+@media (max-width: 650px) {
+  #video-section {
+    border: 5px solid rgb(51, 255, 0);
+  }
+}
+/* 600 px width zone ______________________________*/
+@media (max-width: 600px) {
+  #video-section {
+    border: 5px solid rgb(255, 217, 0);
+  }
+}
+/* 550 px width zone ______________________________*/
+@media (max-width: 550px) {
+  #video-section {
+    border: 5px solid rgb(255, 0, 0);
+  }
+}
+/* 
 .button {
     background-color: #db9f00;
     padding: 0 20px;
@@ -28,21 +79,8 @@ a {
     border-radius: 4px;
     cursor: pointer;
 }
-h2 {
 
-}
-#header {
 
-    position: fixed;
-    top:0;
-    background-color: #2c270f;
-    min-height: 75px;
-    max-height: 150px;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
 @media (max-width: 600px) {
     header {
         flex-wrap: wrap;
@@ -65,7 +103,8 @@ li {
 #nav-bar {
   font-weight: 450;
 }
-@media (max-width: 650px) {
+*/
+/* @media (max-width: 650px) {
   nav {
     margin-top: 10px;
     width: 100%;
@@ -79,24 +118,7 @@ li {
   nav li {
     padding-bottom: 5px;
   }
-}
-nav > ul {
-  width: 35vw;
-  display: flex;
-  flex-direction: row;
-  
-  justify-content: space-evenly;
-}
+} */
+/*
 
-.nav-link {
-  
-}
-
-#video {}
-.form-item {}
-#feedback-form {}
-#feedback-email {}
-#feedback-text {}
-.name-label {}
-#submit {}
  */
