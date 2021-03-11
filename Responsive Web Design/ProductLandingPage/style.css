@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -88,7 +88,10 @@ nav > ul {
   justify-content: space-evenly;
 }
 
-.nav-link {}
+.nav-link {
+  
+}
+
 #video {}
 .form-item {}
 #feedback-form {}
@@ -96,9 +99,4 @@ nav > ul {
 #feedback-text {}
 .name-label {}
 #submit {}
-
-
-
-
-
-
+ */

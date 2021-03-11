@@ -19,9 +19,9 @@
       <!-- User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link. -->
       <!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
       <ul>
-        <li><a href="http://" class="nav-link">Classes</a></li>
-        <li><a href="http://" class="nav-link">Gems</a></li>
-        <li><a href="http://" class="nav-link">Microtransactions</a></li>
+        <li><a href="#Classes" class="nav-link">Classes</a></li>
+        <li><a href="#Gems" class="nav-link">Gems</a></li>
+        <li><a href="#Microtransactions" class="nav-link">Microtransactions</a></li>
       </ul>
 
     </nav>
@@ -36,19 +36,21 @@
 
   <section id="information">
     <div class="grid-item">
-      <h2>Classes</h2>
+      <h2 id="Classes">Classes</h2>
       <div class="grid-text-item">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, vel rerum voluptatem laudantium voluptatibus architecto laboriosam incidunt quod, modi inventore hic sint at iste quae?
       </div>
     </div>
+
     <div class="grid-item">
-      <h2>Gems</h2>
+      <h2 id="Gems">Gems</h2>
       <div class="grid-text-item">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum neque perferendis voluptas porro commodi eos, tempore numquam quibusdam eveniet fugiat possimus. Nostrum, enim. Porro consectetur ab dolore temporibus accusamus aspernatur et totam enim odio odit excepturi non quod pariatur illo ipsum quam, inventore veniam quasi eum, ducimus reprehenderit. Odit, quam.
       </div>
     </div>
+
     <div class="grid-item">
-      <h2>Microtransactions</h2>
+      <h2 id="Microtransactions">Microtransactions</h2>
       <div class="grid-text-item">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia blanditiis hic soluta perferendis culpa porro! Praesentium a laboriosam, totam amet debitis, similique ab voluptatem, rem in deserunt mollitia nobis blanditiis fugiat corporis neque. Commodi, deleniti perferendis illo nesciunt ipsum laborum ad! Iste, molestias veritatis possimus, amet doloribus excepturi hic culpa similique magni eveniet debitis, repellendus quae accusamus cum reprehenderit adipisci vitae nemo quisquam voluptatem. A doloremque repudiandae impedit quasi, hic iusto corporis amet sint laudantium.
       </div>
@@ -59,24 +61,20 @@
     <!-- User Story #7: My landing page has a form element with a corresponding id="form". -->
     <!-- User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL:
   https://www.freecodecamp.com/email-submit). -->
-    <form action="https://www.freecodecamp.com/email-submit" id="form">
-      <div class="form-item">
+    <form id="form" action="https://www.freecodecamp.com/subl-submit">
+      <!-- <div class="form-item">
         <label class="name-label" for="feedback-text" class="hint">Feel free to leave some thoughts about this
           page:</label>
         <textarea name="feedback-text" id="feedback-text" cols="30" rows="10" id="feedback-text"
           placeholder="Enter your thoughts about this page"></textarea>
-      </div>
-      <div class="form-item">
+      </div> -->
         <label class="name-label" for="feedback-text" class="hint">Your email:</label>
         <!-- User Story #8: Within the form, there is an input field with id="email" where I can enter an email address. -->
         <!-- User Story #9: The #email input field should have placeholder text to let the user know what the field is for. -->
         <!-- User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address. -->
-        <input type="email" name="feedback-email" id="feedback-email" placeholder="example@example.com" required>
-      </div>
-      <div class="form-item">
+        <input type="email" name="email" id="email" placeholder="example@example.com" required>
         <!-- User Story #11: Within the form, there is a submit input with a corresponding id="submit". -->
-        <button type="submit" id="submit" class="button">Send</button>
-      </div>
+        <input id="submit" type="submit" class="button" value="Send">
     </form>
   </section>
   <!-- User Story #14: My product landing page should have at least one media query. -->
