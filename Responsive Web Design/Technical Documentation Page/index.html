@@ -1,32 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Lorem Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<!-- 
-    https://codepen.io/freeCodeCamp/pen/NdrKKL
-    https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page
- -->
 
 <body>
-   <!-- User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation). -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <!-- User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header.) -->
+
+  <!-- User Story #8: I can see a nav element with a corresponding id="navbar". -->
+  <nav id="navbar">
+    <!-- User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation. -->
+    <!-- User Story #11: The header element in the navbar must come before any link (a) elements in the navbar. -->
+    <header>
+      Lorem Document
+    </header>
+    <!-- User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section. -->
+    <!-- User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world"). -->
+    <ul>
+      <li><a href="#Intro" class="nav-link">Intro</a></li>
+      <li><a href="#Start" class="nav-link">Start</a></li>
+      <li><a href="#Base" class="nav-link">Base</a></li>
+      <li><a href="#End" class="nav-link">End</a></li>
+      <li><a href="#PS" class="nav-link">PS</a></li>
+    </ul>
+  </nav>
+
+  <!-- User Story #1: I can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation). -->
+  <main id="main-doc">
     <!-- User Story #2: Within the #main-doc element, I can see several section elements, each with a class of main-section. There should be a minimum of 5. -->
     <!-- User Story #3: The first element within each .main-section should be a header element which contains text that describes the topic of that section. -->
     <!-- User Story #4: Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java"). -->
     <!-- User Story #5: The .main-section elements should contain at least 10 p elements total (not each). -->
     <!-- User Story #6: The .main-section elements should contain at least 5 code elements total (not each). -->
-    <!-- User Story #7: The .main-section elements should contain at least 5 li items total (not each). -->
-    <!-- User Story #8: I can see a nav element with a corresponding id="navbar". -->
-    <!-- User Story #9: The navbar element should contain one header element which contains text that describes the topic of the technical documentation. -->
-    <!-- User Story #10: Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section. -->
-    <!-- User Story #11: The header element in the navbar must come before any link (a) elements in the navbar. -->
-    <!-- User Story #12: Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world"). -->
-    <!-- User Story #13: When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element (e.g. If I click on a nav-link element that contains the text "Hello world", the page navigates to a section element that has that id and contains the corresponding header. -->
-    <!-- User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user. -->
-    <!-- User Story #15: My Technical Documentation page should use at least one media query. -->
- 
+
+    <section class="main-section" id="Intro">
+      <header>Intro</header>
+      <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit animi cumque ullam nam dicta minima
+        deserunt
+        tempore perspiciatis, dolor voluptate.</p>
+    </section>
+    <section class="main-section" id="Start">
+      <header>Start</header>
+      <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ex ducimus earum atque facilis, laboriosam
+        quisquam omnis rem, optio qui eaque unde amet laudantium quaerat quod. Ducimus illo at dicta. Iusto voluptatem
+        ex, velit quisquam quis ut cupiditate sint? Quas!</p>
+      <code>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, ad.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, temporibus?
+      </code>
+      <p>3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, accusantium velit incidunt asperiores
+        omnis molestias cupiditate corrupti nemo libero, ducimus, deserunt placeat quod rem at harum doloribus sequi
+        ipsum aut!</p>
+    </section>
+    <section class="main-section" id="Base">
+      <header>Base</header>
+      <p>4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel magni nulla ea tenetur maxime, deserunt nihil
+        repudiandae nobis voluptates inventore. Enim vero magni, sit amet placeat ratione quisquam et. Dolorum explicabo
+        reprehenderit possimus consequuntur repudiandae veniam similique quod, molestias odit.</p>
+      <code>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, esse.
+      </code>
+      <p>5 Lorem ipsum dolor, sit amet consectetur adipisicing elit. At dolor sunt incidunt odio, sit modi dignissimos
+        illum doloribus dolores adipisci laborum nihil error a odit voluptatem, ullam iure velit tempore recusandae eum
+        enim. Inventore sit ratione provident sed. Vel natus, necessitatibus repudiandae ipsam maxime error alias quod
+        culpa ullam. Beatae.</p>
+      <code>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, esse.
+      </code>
+      <p>6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, temporibus consectetur delectus ex nisi aut
+        quidem minima velit! Facere deserunt est dolore tempora repellendus modi? Fugiat aliquam ipsa dolorem quibusdam,
+        nobis ex ab adipisci, fuga maiores enim dolorum minus illo sequi doloremque quis laboriosam aperiam quod unde
+        natus eius corporis commodi expedita deleniti labore. Numquam a dolore beatae officiis quisquam.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, eius, perspiciatis est, modi beatae
+        temporibus ipsa consectetur ratione laudantium in fuga illum. Doloribus quod dolorem rerum odit obcaecati
+        pariatur excepturi dignissimos optio quo repellendus! Error minus eveniet consectetur possimus earum veniam sunt
+        fugiat eius necessitatibus dolorum suscipit inventore, ea quod totam ullam laboriosam dicta minima saepe quasi
+        molestiae ad laudantium ut maiores fugit? Ad consectetur dicta tempore atque fugit quos cum optio assumenda
+        totam neque? Distinctio qui quos dolore corporis aliquid optio odit ea sequi pariatur cupiditate, fugiat
+        reprehenderit? Quos quo mollitia accusantium deserunt praesentium fuga! Molestiae vel ipsam maiores. Suscipit
+        fugit corrupti, quidem reiciendis ex rem in inventore ab accusamus, doloribus ad nemo sint? Maxime quos
+        necessitatibus incidunt repellendus, sint officia possimus molestias eligendi labore quisquam iure explicabo,
+        laudantium odio libero, sapiente veritatis cum voluptatibus velit pariatur nemo. Iste laborum laudantium
+        doloribus harum, ex asperiores eius corporis qui ipsa.</p>
+      <code>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, esse.
+      </code>
+      <!-- User Story #7: The .main-section elements should contain at least 5 li items total (not each). -->
+      <ul>
+        <li>Lorem</li>
+        <li>ipsum</li>
+        <li>dolor</li>
+        <li>sit</li>
+        <li>amet.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="End">
+      <header>End</header>
+      <p>7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minus perspiciatis aperiam commodi
+        laborum officia? Excepturi vero libero eligendi, sequi praesentium quod iure, officia pariatur minus non sed
+        eveniet itaque aperiam placeat? Alias aperiam debitis harum accusantium, pariatur, voluptatibus eos velit
+        necessitatibus, deserunt sunt id? Perspiciatis, cumque inventore. Cumque, eligendi.</p>
+      <p>8 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos sapiente reiciendis blanditiis repudiandae
+        dolore consequatur doloremque laborum, perferendis tenetur iusto nemo, eum saepe et totam voluptates cum
+        laudantium dicta atque natus hic similique! Aut aliquid hic laboriosam quis, modi veniam!</p>
+      <p>9 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, doloremque consequuntur molestias suscipit
+        sunt vitae mollitia nihil, dolorum maiores alias deserunt aliquid quaerat beatae quo repellat tenetur facere?
+        Aut, dolor.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maiores non veritatis quo dolorem? Possimus,
+        officia asperiores? Id porro repellendus esse sed provident necessitatibus ipsum placeat sit, officiis
+        voluptatem? Ad quo dolorem consequuntur accusantium sint iste numquam cum reprehenderit earum aperiam porro aut
+        laudantium similique provident eius, explicabo odio ipsam nobis alias! Eligendi dolores magni labore laborum
+        fugit odit, perspiciatis optio voluptates. Ducimus minus illum veritatis amet at harum esse aliquid earum ea
+        ipsa reiciendis atque perferendis minima optio voluptatum, sunt, commodi modi laborum maxime consequuntur
+        adipisci dolores. Veniam, tempora dolores quia esse, assumenda fugit numquam recusandae molestiae cumque qui,
+        quibusdam sapiente alias? Praesentium magnam fugiat, eius illum doloremque excepturi cupiditate vitae,
+        laboriosam numquam consectetur laborum. Eum harum perferendis nisi corrupti nemo asperiores, molestiae aliquid.
+        Aperiam quas, voluptate excepturi quidem odio aut dolore temporibus animi placeat totam incidunt? Reprehenderit,
+        aliquid? Aliquid repudiandae accusamus nesciunt nulla repellat beatae, eos cupiditate aspernatur odit neque
+        doloribus culpa voluptas. Ullam deserunt labore nulla dolore obcaecati molestias sint officiis quod magnam
+        voluptas temporibus natus voluptatum quasi, saepe velit debitis culpa fugit corporis harum distinctio ab ut
+        blanditiis! Eius qui nulla vero commodi corporis officiis iste perferendis doloremque quaerat? Debitis autem
+        totam error corrupti tempore commodi reprehenderit nulla dolore doloremque repellat, maiores temporibus fugiat
+        esse inventore cum perferendis dolorum impedit illo neque rem minus aperiam quidem!</p>
+      <code>Lorem ipsum dolor sit amet.
+      </code>
+    </section>
+    <section class="main-section" id="PS">
+      <header>PS</header>
+      <p>10 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, aliquam.</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/txf-PS96NHo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <!-- User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user. -->
+
+  <!-- User Story #15: My Technical Documentation page should use at least one media query. -->
+
+
 </body>
+
 </html>
