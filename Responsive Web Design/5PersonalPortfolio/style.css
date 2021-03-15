@@ -6,12 +6,15 @@
  * 980px / 16px = 61.25em
  * 460px / 16px = 28.75em
  */
+ /*Color: https://paletton.com/#uid=33s0u0kllllaFw0g0qFqFg0w0aF */
 * {
   margin: 0;
   padding: 0;
 }
 html {
   font-size: 62.5%; /* 1rem = 16px, 100% = 16px  ->  1rem = 10px, 62.5% = 10px */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* responsiveness */
@@ -61,7 +64,7 @@ h2 {
   font-size: 4rem;
 }
 a {
-  color: #806215;
+  color: #FFE7AA;
   text-decoration: none;
 }
 /* Navigation */
@@ -70,7 +73,7 @@ nav {
   justify-content: flex-end;
   position: fixed;
   width: 100%;
-  background: #FFE7AA;
+  background: #802B15;
   box-shadow: 0 4px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
@@ -95,7 +98,7 @@ nav > ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: black;
   background-image: linear-gradient(145deg, #802B15 0%, #032536 100%);
 }
@@ -134,10 +137,27 @@ nav > ul {
   border-radius: 2px;
 }
 .project-a:hover {
-  color: #FFE7AA;
+  color: #802B15;
   transition: color 0.4s ease-out;
 }
 .project-a > p {
   font-size: 2rem;
   padding: 2rem 0.5rem;
+}
+/* Contact */
+#contacts {
+  text-align: center;
+  width: 100%;
+  background: #032536;
+}
+#contacts > ul {
+  list-style: none;
+  justify-content: center;
+  margin: 0 8rem 0 8rem;
+}
+#contacts > ul > li {
+  font-size: 3rem;
+}
+.contacts-a:hover {
+  color: #802B15;
 }
